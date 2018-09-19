@@ -1,0 +1,316 @@
+import { Split } from 'mdx-deck/layouts'
+import { Appear, Image, Notes } from 'mdx-deck';
+import { CodeSurfer } from 'mdx-deck-code-surfer';
+export { default as theme } from './theme';
+
+# React 17 is coming
+
+---
+
+<Image src="images/react-conf.png" size="contain" />
+
+---
+
+# React 16
+
+---
+
+# Sept 20, 2017
+
+---
+
+- Fragments
+- Portals
+- React.createRef() API
+- Error boundaries
+- Context API
+- Profiler
+- Lifecycle hook changes
+- Fiber
+
+---
+
+<CodeSurfer
+  title="Strings"
+  code={require("!raw-loader!./snippets/Strings.jsx")}
+  lang="javascript"
+  showNumbers={false}
+  dark={true}
+/>
+
+---
+
+<CodeSurfer
+  title="Arrays"
+  code={require("!raw-loader!./snippets/Arrays.jsx")}
+  lang="javascript"
+  showNumbers={false}
+  dark={true}
+/>
+
+---
+
+<CodeSurfer
+  title="Fragment Component"
+  code={require("!raw-loader!./snippets/FragmentComponent.jsx")}
+  lang="javascript"
+  showNumbers={false}
+  dark={true}
+  steps={[
+    { lines: [3,7]}
+  ]}
+/>
+
+---
+
+<CodeSurfer
+  title="Fragment Syntax"
+  code={require("!raw-loader!./snippets/FragmentSyntax.jsx")}
+  lang="javascript"
+  showNumbers={false}
+  dark={true}
+  steps={[
+    { lines: [3,7]}
+  ]}
+/>
+
+---
+
+# Portals
+
+---
+
+<CodeSurfer
+  title="Portals"
+  code={require("!raw-loader!./snippets/Portal.jsx")}
+  lang="javascript"
+  showNumbers={false}
+  dark={true}
+  steps={[
+    { lines: [4] },
+    { range: [8, 11] },
+  ]}
+/>
+
+---
+
+# Create Ref API
+
+---
+
+<CodeSurfer
+  title="String ref (deprecated)"
+  code={require("!raw-loader!./snippets/CreateRefString.jsx")}
+  lang="javascript"
+  showNumbers={false}
+  dark={true}
+  steps={[
+    { tokens: { 4: [5, 6, 7] }}
+  ]}
+/>
+
+---
+
+<CodeSurfer
+  title="Callback ref (still fine)"
+  code={require("!raw-loader!./snippets/CallbackRef.jsx")}
+  lang="javascript"
+  showNumbers={false}
+  dark={true}
+  steps={[
+    { lines: [6] },
+  ]}
+/>
+
+---
+
+<CodeSurfer
+  title="Object ref"
+  code={require("!raw-loader!./snippets/CreateRefAPI.jsx")}
+  lang="javascript"
+  showNumbers={false}
+  dark={true}
+    steps={[
+    { lines: [3, 9] },
+  ]}
+/>
+
+---
+
+# Error boundaries
+
+---
+
+<CodeSurfer
+  title="Error boundaries"
+  code={require("!raw-loader!./snippets/ErrorBoundary.jsx")}
+  lang="javascript"
+  showNumbers={false}
+  dark={true}
+  steps={[
+    { range: [4, 7] },
+    { range: [10, 12] },
+  ]}
+/>
+
+---
+
+# Context API
+
+---
+
+<CodeSurfer
+  title="Context API"
+  code={require("!raw-loader!./snippets/ContextAPI.jsx")}
+  lang="javascript"
+  showNumbers={false}
+  dark={true}
+  steps={[
+    { lines: [1] },
+    { range: [3, 11] },
+    { range: [13, 19] },
+    { range: [21, 27] },
+  ]}
+/>
+
+---
+
+# Profiler
+
+---
+
+<Image src='images/profiler.png' size="contain" />
+
+---
+
+# Lifecycle changes
+
+---
+
+### Deprecated
+
+- componentWillMount
+- componentWillReceiveProps
+- componentWillUpdate
+
+---
+
+### Renamed
+
+- UNSAFE_componentWillMount
+- UNSAFE_componentWillReceiveProps
+- UNSAFE_componentWillUpdate
+
+---
+
+### New
+
+- getDerivedStateFromProps
+- getSnapshotBeforeUpdate
+
+---
+
+# Fiber
+
+---
+
+### Async rendering
+
+---
+
+### Groundwork
+
+---
+
+# React 17
+
+---
+
+* Slow and fast CPUs (mobile vs desktop)
+* Slow and fast networks
+
+---
+
+### Time Slicing and Suspense
+
+https://www.youtube.com/watch?v=nLF0n9SACd4
+
+---
+
+# Time Slicing
+
+---
+
+<blockquote>Generic way for components to prevent low priority updates blocking high priority updates.</blockquote>
+
+---
+
+https://build-mbfootjxoo.now.sh/
+
+---
+
+[Interactivity](https://philipwalton.com/articles/why-web-developers-need-to-care-about-interactivity) by Philip Walton
+
+---
+
+[DEMO](http://timeslicing-unstable-demo.surge.sh/)
+
+---
+
+# Suspense
+
+---
+
+<blockquote>Generic way for components to suspend rendering while they wait for something to happen.</blockquote>
+
+---
+
+- [DEMO](https://benoitzugmeyer.github.io/react-suspense-demo/)
+- [Github](https://github.com/BenoitZugmeyer/react-suspense-demo)
+
+---
+
+# What about Apollo?
+
+---
+
+<Image src='images/apollo.png' size="contain" />
+
+---
+
+# Getting ready
+
+---
+
+# Strict mode
+
+---
+
+<blockquote>Addressing the issues identified by strict mode now will make it easier for you to take advantage of async rendering in future releases of React.</blockquote>
+
+---
+
+### Strict mode
+
+- Identifying components with unsafe lifecycles
+- Warning about legacy string ref API usage
+- Detecting unexpected side effects
+- Detecting legacy context API
+
+---
+
+<CodeSurfer
+  title="Enabling strict mode (dev only)"
+  code={require("!raw-loader!./snippets/StrictMode.jsx")}
+  lang="javascript"
+  showNumbers={false}
+  dark={true}
+/>
+
+---
+
+https://github.com/sw-yx/fresh-async-react
+
+---
+
+# End
