@@ -1,4 +1,4 @@
-# React 17
+# React 17 Presentation
 
 Bit of a recap of what's been happening in React 16 and what we might expect to see in React 17.
 
