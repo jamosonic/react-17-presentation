@@ -4,6 +4,8 @@ Bit of a recap of what's been happening in React 16 and what we might expect to 
 
 Using the awesome [mdx-deck](https://github.com/jxnblk/mdx-deck).
 
+Slides at https://dist-ynnnfuxqrm.now.sh/
+
 Sources:
 
 - [sw-yx's amazingly thorough collection of async related mentions, talks, posts etc.](https://github.com/sw-yx/fresh-async-react)
